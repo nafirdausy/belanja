@@ -1,3 +1,4 @@
+import 'package:belanja/widgets/description.dart';
 import 'package:flutter/material.dart';
 import 'package:belanja/models/item.dart';
 
@@ -11,9 +12,9 @@ Widget build(BuildContext context) {
         title: Text("Shopping List"),
       ),
       body: Center(
-        child: Text(args.name+" price "+args.price.toString()+
-        " IDR with netto "+args.net.toString()+args.unit),
+        child: description(args: args),
       ),
     );
   }
-} 
+}
+
