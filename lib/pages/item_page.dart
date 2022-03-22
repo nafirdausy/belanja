@@ -11,7 +11,8 @@ Widget build(BuildContext context) {
         title: Text("Shopping List"),
       ),
       body: Center(
-        child: Text(args.name+" with "+ args.price.toString()),
+        child: Text(args.name+" price "+args.price.toString()+
+        " IDR with netto "+args.net.toString()+args.unit),
       ),
     );
   }

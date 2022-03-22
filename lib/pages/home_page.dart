@@ -4,8 +4,9 @@ import 'package:flutter/material.dart';
 class HomePage extends StatelessWidget {
 
   final List<Item> items =[
-    Item(name: 'Sugar', price: 5000),
-    Item(name: 'Salt', price: 2000)
+    Item(name: 'Sugar', price: 5000, net: 200, unit: 'g'),
+    Item(name: 'Salt', price: 2000, net: 50, unit: 'g'),
+    Item(name: 'Milk', price: 4000, net: 3, unit: 'fl.oz'),
   ];
 
   @override
